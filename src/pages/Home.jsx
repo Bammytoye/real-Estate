@@ -1,8 +1,11 @@
 import React from 'react'
+import Banner from '../components/Banner'
 
 function Home() {
     return (
-        <div>Home</div>
+        <div className='min-h-[1800px]'>
+            <Banner />
+        </div>
     )
 }
 

@@ -12,11 +12,11 @@ import PropertyDetails from './pages/PropertyDetails';
 
 function App() {
   return (
-    <div>
+    <div className='mx-auto bg-white'>
       <Header />
         <Routes>
           <Route path='/' element={<Home />}/>
-          <Route path='/property/id:' element={<PropertyDetails />}/>
+          <Route path='/property/:id' element={<PropertyDetails />}/>
         </Routes>
       <Footer />
     </div>
