@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { RiArrowDownSLine, RiArrowUpSLine, RiMapPinLine } from 'react-icons/ri';
-import { Menu } from '@headlessui/react'; // Import Headless UI
-import { HouseContext } from './HouseContext'; // Import House Context
+import { Menu } from '@headlessui/react';
+import { HouseContext } from './HouseContext';
 
 function CountryDropDown() {
     const { country, setCountry, countries } = useContext(HouseContext);
@@ -9,7 +9,7 @@ function CountryDropDown() {
 
     return (
         <Menu as='div' className='dropdown relative'>
-            <Menu.Button 
+            <Menu.Button
                 onClick={() => setIsOpen(!isOpen)}
                 className='dropdown-btn w-full text-left'>
                 <RiMapPinLine className='dropdown-icon-primary' />
@@ -27,7 +27,7 @@ function CountryDropDown() {
                 </div>
             </Menu.Button>
 
-            <Menu.Items className='dropdown-menu absolute z-10 mt-2 w-full bg-white rounded-md shadow-lg list-none'>
+            <Menu.Items className='dropdown-menu'>
                 {
                     countries.map((country, index) => {
                         return (

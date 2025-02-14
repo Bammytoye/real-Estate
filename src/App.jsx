@@ -12,7 +12,7 @@ import PropertyDetails from './pages/PropertyDetails';
 
 function App() {
   return (
-    <div className='mx-auto bg-white'>
+    <div className='max-w-[1140px] mx-auto bg-white'>
       <Header />
         <Routes>
           <Route path='/' element={<Home />}/>
