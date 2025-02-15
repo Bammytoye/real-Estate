@@ -16,6 +16,12 @@ function HouseList() {
         )
     }
 
+    if (houses.length < 1) {
+        return <div className='text-center text-3xl text-gray-400 mt-48'>
+                    Sorry, nothing found 
+                </div>
+    }
+
     return (
         <section className='mb-20'>
             <div className='container mx-auto'>
