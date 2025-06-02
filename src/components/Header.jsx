@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import Logo from '../assets/img/logo.svg'
 
 function Header() {
@@ -13,13 +13,13 @@ function Header() {
 
                 {/* button */}
                 <div className='flex space-x-6 items-center'>
-                    <Link to='' 
+                    <Link to='/login' 
                         className='hover:text-violet-900 transition'
                         >
                     Log In
                     </Link>
                     
-                    <Link to='' 
+                    <Link to='/signup' 
                         className='bg-violet-700 hover:bg-violet-900 text-white px-4 py-2 rounded-lg transition'
                         >
                         Sign Up
